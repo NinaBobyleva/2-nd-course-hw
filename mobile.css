@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+    .top {
+        height: 735px;
+        background-position-x: 31%;
+    }
     .top__wrap {
         display: flex;
         flex-wrap: wrap;
@@ -7,10 +11,23 @@
     .top__heading {
         text-align: center;
         font-size: 32px;
+        padding-top: 238px;
+        padding-bottom: 32px;
     }
     .top__text {
         width: 343px;
         text-align: center;
         font-size: 14px;
+        padding-bottom: 32px;
+    }
+    .top__button {
+        margin-bottom: 238px;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+    }
+    .box__img {
+        width: 343px;
     }
 }
