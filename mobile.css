@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+    .top__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top__heading {
+        text-align: center;
+        font-size: 32px;
+    }
+    .top__text {
+        width: 343px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
