@@ -19,23 +19,23 @@ alert(creatorJavaScript)
 
 let ten = 10;
 let two = 2;
-alert(10 + 2);
-alert(10 - 2);
-alert(10 * 2);
-alert(10 / 2);
+alert(ten + two);
+alert(ten - two);
+alert(ten * two);
+alert(ten / two);
 
 // Задание 5
 
 let numberTwo = 2;
 let five = 5;
-let result = 2 ** 5;
+let result = numberTwo ** five;
 alert(result)
 
 // Задание 6
 
 let a = 9;
 let b = 2;
-alert(9 % 2);
+alert(a % b);
 
 // Задание 7
 
