@@ -1,9 +1,14 @@
 @media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .top {
         height: 735px;
         background-position-x: 31%;
     }
     .top__wrap {
+        width: 343px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -23,11 +28,5 @@
     .top__button {
         margin-bottom: 238px;
     }
-    .box {
-        display: flex;
-        justify-content: center;
-    }
-    .box__img {
-        width: 343px;
-    }
+
 }
