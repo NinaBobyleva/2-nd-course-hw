@@ -56,10 +56,12 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 493px;
+    transition: background 0.4s;
 }
 .top__button:hover {
     border-radius: 30px;
     background: #EB443F;
+    cursor: pointer;
 }
 
 .box {
@@ -74,11 +76,12 @@
 .box__wrap {
     position: relative;
     width: 378px;
+    transition: all 0.3s;
 }
 .box__wrap:hover {
     border-radius: 16px;
     border: 3px solid #44D2FF;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), lightgray 50% / cover no-repeat;
 }
 .box__text {
     position: absolute;
@@ -94,5 +97,5 @@
 .box__img {
     width: 100%;
     border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), lightgray 50% / cover no-repeat;
 }
