@@ -45,8 +45,6 @@ console.log(num);
 let friday = 1;
 
 do {
-    if (friday % 7 === 1) {
-        console.log(`Сегодня пятница, ${friday} число. Необходимо подготовить отчет.`)
-    }
-    friday++
+    console.log(`Сегодня пятница, ${friday} число. Необходимо подготовить отчет.`)
+    friday += 7
 } while (friday <= 31);
