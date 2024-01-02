@@ -52,9 +52,36 @@ function user() {
 }
 
 user();
-*/
+
 // Задание 5
 
-let mult = (a, b) => {
-    
+let mult = () => {
+    let a = (prompt('Введите первое число!'));
+    let b = (prompt('Введите второе число!'));
+    if (isNaN(a) || isNaN(b)) {
+        return `Одно или оба значения не являются числом`
+    } else {
+        return a * b
+    }
 }
+
+console.log(mult());
+
+// Задание 6
+
+function userAnswer() {
+    let n = Number(prompt('Введите число от 0 до 10'));
+    if (isNaN(Number(n))) {
+        return `Переданный параметр не является числом`;
+    } else if (n >= 0 && n <=10) {
+        result = n**3;
+        return `${n} в кубе равняется ${result}`;
+    } else {
+        return `Необходимо ввести число от 0 до 10`
+    }
+}
+
+console.log(userAnswer());
+*/
+// Задание 7
+
