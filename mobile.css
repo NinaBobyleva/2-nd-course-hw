@@ -30,5 +30,39 @@
     .box__wrap {
         width: 343px;
     }
+    .seasons {
+        display: flex;
+        justify-content: center;
+    }
+    .seasons__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .seasons__heading {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 51px;
+    }
+    .seasons__text {
+        width: 343px;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    .seasons__button {
+        margin-bottom: 64px;
+    }
+    .seasons__img {
+        width: 344px;
+        margin-bottom: 85px;
+    }
 
 }

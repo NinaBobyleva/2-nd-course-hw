@@ -108,9 +108,6 @@
     align-items: center;
     gap: 135px;
 }
-.seasons__wrap {
-    /* width: 584px; */
-}
 .seasons__heading {
     color: #FFF;
     font-size: 48px;
