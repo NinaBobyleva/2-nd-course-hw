@@ -8,8 +8,8 @@
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 602px);
+    padding-right: calc(50% - 602px);
 }
 
 .top {
@@ -64,12 +64,15 @@
     cursor: pointer;
 }
 
+.main {
+    background: #000915;
+}
+
 .box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-    background: #000915;
     padding-top: 128px;
     padding-bottom: 128px;
 }
@@ -98,4 +101,53 @@
     width: 100%;
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), lightgray 50% / cover no-repeat;
+}
+.seasons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 135px;
+}
+.seasons__wrap {
+    /* width: 584px; */
+}
+.seasons__heading {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 282px;
+    padding-bottom: 32px;
+}
+.seasons__text {
+    width: 584px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+.seasons__button {
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    background: #9C0332;
+    font-family: inherit;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 32px;
+    margin-bottom: 282px;
+    transition: background 0.4s;
+}
+.seasons__button:hover {
+    border-radius: 30px;
+    background: #EB443F;
+    cursor: pointer;
+}
+.seasons__img {
+    width: 485px;
 }
