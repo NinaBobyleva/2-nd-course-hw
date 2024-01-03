@@ -1,5 +1,5 @@
 // Задание 1
-/*
+
 let task = (a, b) => {
    let result = a > b ? console.log(b) : console.log(a);
    return result
@@ -82,6 +82,47 @@ function userAnswer() {
 }
 
 console.log(userAnswer());
-*/
+
 // Задание 7
 
+function area() {
+    return 3.14 * this.radius**2;
+}
+
+function perimeter() {
+    return 2 * 3.14 * this.radius;
+}
+
+let circle1 = {
+    radius: 34,
+    getArea: area,
+    getPerimeter: perimeter,
+}
+
+let circle2 = {
+    radius: 56,
+    getArea: area,
+    getPerimeter: perimeter,
+}
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
+
+// Задание 8
+
+function seasons() {
+    let month = Number(prompt('Введите номер месяца'));
+    if (month >= 1 && month <=2 || month === 12) {
+        return 'Зима';
+    } else if (month >= 3 && month <= 5) {
+        return 'Весна';
+    } else if (month >= 6 && month <= 8) {
+        return 'Лето';
+    } else if (month >= 9 && month <= 11) {
+        return 'Осень';
+    } else {
+        return 'Такого месяца не существует';
+    }
+}
