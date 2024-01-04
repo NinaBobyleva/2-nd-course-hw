@@ -70,12 +70,16 @@ switch (monthNumber) {
 
 // Задание 7
 
-let anyNumber = Number(prompt('Пожалуйста, введите любое число.'))
+let anyNumber = Number(prompt('Пожалуйста, введите любое число.'));
 
-if (anyNumber % 2) {
-    alert('Число нечетное')
+if (!isNaN(Number(anyNumber))) {
+    if (anyNumber % 2) {
+        alert('Число нечетное');
+    } else {
+        alert('Число четное');
+    }
 } else {
-    alert('Число четное')
+    alert('Это не число');
 }
 
 // Задание 8 и 9
