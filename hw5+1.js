@@ -16,7 +16,7 @@ let number = function () {
     if (answer % 2 == 0) {
         return 'Число четное';
     } else {
-        return 'Число нечетное';
+        return 'Число нечетное забор';
     }
 }
 console.log(number());
