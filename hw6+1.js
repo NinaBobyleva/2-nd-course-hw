@@ -39,7 +39,7 @@ for (let i = 0; i < 3; i++) {
 console.log(arrs);
 
 // Задание 5
-
+/
 const array = [1, 1, 1];
 
 array.push(2, 2, 2);
