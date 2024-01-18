@@ -29,12 +29,14 @@ let arrs = [];
 
 for (let i = 0; i < 3; i++) {
     arrs[i] = [];
-    console.log(arrs);
+
     for (let j = 0; j < 3 ; j++) {
         arrs[i][j] = 1;
-        console.log(arrs);
+
     };
 };
+
+console.log(arrs);
 
 // Задание 5
 
@@ -125,3 +127,32 @@ function filterPositive(array) {
   filterPositive([-1, 0, 5, -10, 56]);
   filterPositive([-25, 25, 0, -1000, -2]);
   
+//  Задание 14
+
+let arr1 = [];
+let arr2 = [];
+
+for (let i = 0; i < 10; i++) {
+    let result = Math.round(Math.random() * 10);
+    arr1.push(result);
+    if (result % 2 === 0) {
+        arr2.push(result);
+    }
+}
+
+console.log(arr1);
+console.log(arr2);
+
+// Задание 15
+
+let random = [];
+
+for (let i = 1; i <= 6; i++) {
+    let result = Math.ceil(Math.random() * 10);
+    random.push(result);
+}
+
+let newRandom = random.reduce((a, b) => a + b) / random.length;
+
+console.log(random);
+console.log(newRandom);
