@@ -1,5 +1,5 @@
 // Задание 1
-
+/*
 const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
@@ -64,12 +64,14 @@ let search = riddle.includes(i);
 
 if (search) {
     alert('Угадал');
+} else if (isNaN(Number(i))) {
+    alert('Ввел не то');
 } else {
     alert('Не угадал');
 }
-
+*/
 // Задание 8
-
+/*
 let letters = 'abcdef';
 
 letters = letters.split('');
@@ -156,3 +158,4 @@ let newRandom = random.reduce((a, b) => a + b) / random.length;
 
 console.log(random);
 console.log(newRandom);
+*/
