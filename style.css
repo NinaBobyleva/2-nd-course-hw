@@ -148,3 +148,50 @@
 .seasons__img {
     width: 485px;
 }
+
+.word {
+    display: flex;
+    align-items: center;
+    gap: 135px;
+}
+.word__img {
+    width: 481px;
+    margin-top: 239px;
+    margin-bottom: 239px;
+}
+.word__heading {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 282px;
+}
+.word__text {
+    width: 588px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.word__button {
+    width: 240px;
+    height: 48px;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 282px;
+    transition: background 0.4s;
+}
+.word__button:hover {
+    border-radius: 30px;
+    background: #EB443F;
+    cursor: pointer;
+}
