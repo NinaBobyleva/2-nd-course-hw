@@ -1,6 +1,6 @@
 // Задание 1
-/*
-let word = 'мороженое';
+
+let word = 'js';
 
 console.log(word.toUpperCase());
 
@@ -42,7 +42,7 @@ console.log(max);
 
 // Задание 5
 
-const randomNum = () => Math.ceil(Math.random() *10);
+const randomNum = () => Math.round(Math.random() *10);
 
 console.log(randomNum());
 
@@ -59,18 +59,15 @@ function getRandomNumbers(num) {
     console.log(arr);
 }
 
-getRandomNumbers(9);
+getRandomNumbers(7);
 
 // Задание 7
 
 function randomNum(max, min) {
-  return Math.round(Math.random() * (max));
+  return Math.round(Math.random() * (max - min)) + min;
 }
 
 console.log((randomNum(10, 6)));
-
-// * max || Math.random() * min
-
 
 // Задание 8
 
@@ -82,8 +79,8 @@ console.log(todayDate);
 
 let currentDate = new Date();
 
-let days = 73 * 24 * 60 * 60 * 1000;
-let myDate = +currentDate + days;
+let calculation = 73 * 24 * 60 * 60 * 1000;
+let myDate = +currentDate + calculation;
 let daysAgo = new Date(myDate);
 
 console.log(daysAgo);
@@ -104,11 +101,25 @@ function date(currentDate) {
 }
 
 date();
-*/
+
 // Задание 11
 
+function fruitsGame() {
+    let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arr = arr.sort(() => Math.random() - 0.5);
+    alert(arr);
 
+    let answer1 = prompt('Чему равнялся первый элемент массива?');
+    let answer2 = prompt('Чему равнялся последний элемент массива?');
 
+    if (answer1.toLowerCase() === arr[0].toLowerCase() && answer2.toLowerCase() === arr[6].toLowerCase()) {
+        alert('Поздравляю! Вы угадали оба элемента.');
+    } else if (answer1.toLowerCase() === arr[0].toLowerCase() || answer2.toLowerCase() === arr[6].toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Увы, вы ответили неверно.');
+    } 
+}
 
 
 
