@@ -108,17 +108,28 @@ function fruitsGame() {
     let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     arr = arr.sort(() => Math.random() - 0.5);
     alert(arr);
-
-    let answer1 = prompt('Чему равнялся первый элемент массива?');
-    let answer2 = prompt('Чему равнялся последний элемент массива?');
-
-    if (answer1.toLowerCase() === arr[0].toLowerCase() && answer2.toLowerCase() === arr[6].toLowerCase()) {
-        alert('Поздравляю! Вы угадали оба элемента.');
-    } else if (answer1.toLowerCase() === arr[0].toLowerCase() || answer2.toLowerCase() === arr[6].toLowerCase()) {
-        alert('Вы были близки к победе!');
-    } else {
-        alert('Увы, вы ответили неверно.');
-    } 
+    for (i = 0; i < 1; i++) {
+        let answer1 = prompt('Чему равнялся первый элемент массива?');
+        if (!isNaN(answer1)) {
+            alert('Вы отказались от ввода.');
+            break;
+        } else {
+            for (let j = 0; j < 1; j++) {
+                let answer2 = prompt('Чему равнялся последний элемент массива?');
+                if (!isNaN(answer2)) {
+                    alert('Вы отказались от ввода.');
+                } else {
+                    if (answer1.toLowerCase() === arr[0].toLowerCase() && answer2.toLowerCase() === arr[6].toLowerCase()) {
+                        alert('Поздравляю! Вы угадали оба элемента.');
+                    } else if (answer1.toLowerCase() === arr[0].toLowerCase() || answer2.toLowerCase() === arr[6].toLowerCase()) {
+                        alert('Вы были близки к победе!');
+                    } else {
+                        alert('Увы, вы ответили неверно.');
+                    } 
+                }
+            }
+        }
+    }
 }
 
 
@@ -189,60 +200,4 @@ function fruitsGame() {
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-const days = ['Воскресение', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
-const month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-
-let myDate = new Date();
-let fullDate = "Сегодня:" + myDate.getDate() + " " + month[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
-
-console.log(fullDate);
-
-
-let welcome;
-let myDate = new Date();
-
-let hour = myDate.getHours();
-let minute = myDate.getMinutes();
-let second = myDate.getSeconds();
-
-if (minute < 10) {
-    minute = "0" + minute;
-} 
-if (second < 10) {
-    second = "0" + second;
-}
-
-if (hour < 12) {
-    welcome = "Доброе утро";
-} else if (hour < 17) {
-    welcome = "Добрый день";
-} else {
-    welcome = "Добрый вечер";
-}
-
-console.log(welcome + ", текущее время: " + hour + ":" + minute + ":" + second);
-
-
-const days = ['Воскресение', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
-const month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-
-let myDate = new Date();
-
-myDate.setDate(21);
-myDate.setMonth(10);
-myDate.setFullYear(2023);
-
-let fullDate = "Сегодня:" + myDate.getDate() + " " + month[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
-console.log(fullDate);
-*/
 
