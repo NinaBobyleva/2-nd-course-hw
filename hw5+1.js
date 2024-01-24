@@ -1,5 +1,5 @@
 // Задание 1
-
+/*
 let task = (a, b) => {
    let result = a > b ? console.log(b) : console.log(a);
    return result
@@ -109,7 +109,7 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
-
+*/
 // Задание 8
 
 function seasons() {

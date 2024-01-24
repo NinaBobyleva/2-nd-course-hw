@@ -1,5 +1,5 @@
 // Задание 1
-
+/*
 let word = 'js';
 
 console.log(word.toUpperCase());
@@ -101,7 +101,7 @@ function date(currentDate) {
 }
 
 date();
-
+*/
 // Задание 11
 
 function fruitsGame() {
