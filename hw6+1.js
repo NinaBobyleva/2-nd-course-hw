@@ -1,5 +1,5 @@
 // Задание 1
-
+/*
 const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
@@ -39,7 +39,7 @@ for (let i = 0; i < 3; i++) {
 console.log(arrs);
 
 // Задание 5
-/
+
 const array = [1, 1, 1];
 
 array.push(2, 2, 2);
@@ -60,12 +60,15 @@ console.log(number);
 const riddle = [9, 8, 7, 6, 5];
 
 let i = Number(prompt('Введите число'));
-let search = riddle.includes(i);
 
-if (search) {
-    alert('Угадал');
+if (isNaN(Number(i))) {
+    if (riddle.includes(i)) {
+        alert('Угадал');
+    } else {
+        alert('Не угадал');
+    }
 } else {
-    alert('Не угадал');
+    alert('Вы ввели не число');
 }
 
 // Задание 8
@@ -106,7 +109,7 @@ console.log(newSquare);
 
 // Задание 12
 
-let newArr = [];
+const newArr = [];
 
 function lengthWord(arrays) {
     for (let i = 0; i < arrays.length; i++) {
@@ -156,3 +159,4 @@ let newRandom = random.reduce((a, b) => a + b) / random.length;
 
 console.log(random);
 console.log(newRandom);
+*/
