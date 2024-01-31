@@ -107,16 +107,16 @@ date();
 function fruitsGame() {
     let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     arr = arr.sort(() => Math.random() - 0.5);
-    alert(arr);
+    alert(arr.join(' '));
     for (i = 0; i < 1; i++) {
         let answer1 = prompt('Чему равнялся первый элемент массива?');
-        if (!isNaN(answer1)) {
+        if (answer1 === null) {
             alert('Вы отказались от ввода.');
             break;
         } else {
             for (let j = 0; j < 1; j++) {
                 let answer2 = prompt('Чему равнялся последний элемент массива?');
-                if (!isNaN(answer2)) {
+                if (answer2 === null) {
                     alert('Вы отказались от ввода.');
                 } else {
                     if (answer1.toLowerCase() === arr[0].toLowerCase() && answer2.toLowerCase() === arr[6].toLowerCase()) {
