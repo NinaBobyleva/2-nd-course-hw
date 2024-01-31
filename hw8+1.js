@@ -1,5 +1,5 @@
 // Задание 1
-
+/*
 const person = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
@@ -85,3 +85,5 @@ function sayHi (name) {
 }
 
 delayForSecond(() => sayHi('Глеб'))
+*/
+
