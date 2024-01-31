@@ -71,7 +71,7 @@ console.log((randomNum(10, 6)));
 
 // Задание 8
 
-let todayDate = new Date(1705867117549);
+let todayDate = new Date();
 
 console.log(todayDate);
 
@@ -131,7 +131,6 @@ function fruitsGame() {
         }
     }
 }
-
 
 
 
